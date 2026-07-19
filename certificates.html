@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Althea Clariz Compoc | Portfolio - Certificates</title>
+  <meta name="description" content="View certificates and academic achievements earned by Althea Clariz Compoc.">
+  <link rel="stylesheet" href="style.css?v=1.6">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Background Glow Mesh -->
+  <div class="bg-mesh">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <a href="index.html" class="logo" id="nav-logo">Althea.</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+      <li><a href="certificates.html" id="nav-certificates">Certificates</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact Me</a></li>
+    </ul>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <div class="page-container">
+      <div class="glass-panel panel-flat">
+        <div class="cert-section">
+          <!-- Cert Info Left -->
+          <div class="cert-info">
+            <p class="section-tag">Credentials</p>
+            <h2>Academic Achievements & Badges</h2>
+            <p class="about-bio">
+              Demonstrating commitment to skill development and continuous learning. These certifications represent core skills acquired in networking, database infrastructure, and IT support.
+            </p>
+            
+            <ul class="cert-meta-list">
+              <li><strong>Certification:</strong> CCNA: Introduction to Networks</li>
+              <li><strong>Provider:</strong> Cisco Networking Academy</li>
+              <li><strong>Institution:</strong> Davao Del Norte State College</li>
+              <li><strong>Instructor:</strong> Cristopher Anana</li>
+              <li><strong>Issue Date:</strong> June 11, 2025</li>
+            </ul>
+
+            <div class="cta-group" style="margin-top: 1rem;">
+              <a href="certs/networkingcert.pdf" target="_blank" class="btn btn-primary" id="btn-view-pdf">Open Certificate PDF</a>
+              <a href="certs/networkingcert.pdf" download="Althea_Clariz_Compoc_CCNA.pdf" class="btn btn-secondary" id="btn-download-pdf">Download PDF</a>
+            </div>
+          </div>
+
+          <!-- Inline Certificate PDF Viewer -->
+          <div class="cert-viewer-container" style="width: 100%; height: 420px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-glass); box-shadow: var(--shadow-glass); background: var(--bg-card);">
+            <iframe src="certs/networkingcert.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

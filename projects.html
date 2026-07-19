@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Althea Clariz Compoc | Portfolio - Projects</title>
+  <meta name="description" content="View the academic and professional projects developed by Althea Clariz Compoc.">
+  <link rel="stylesheet" href="style.css?v=1.6">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Background Glow Mesh -->
+  <div class="bg-mesh">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <a href="index.html" class="logo" id="nav-logo">Althea.</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+      <li><a href="certificates.html" id="nav-certificates">Certificates</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact Me</a></li>
+    </ul>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <div class="page-container">
+      <div class="glass-panel panel-flat">
+        <div class="projects-section">
+          <div class="projects-header">
+            <p class="section-tag">Portfolio</p>
+            <h2>Selected Work</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-img-container"
+                onclick="openProjectModal('QuestLearn', 'An interactive gamified learning platform that transforms lessons into engaging quests. Students complete academic milestones, earn badges/XP, and track their scores on a competitive leaderboard. Supports quiz modules and multi-subject lessons.', 'JavaScript, PHP, HTML5, CSS3, Game Mechanics', 'img/proj1.jpg')">
+                <img src="img/proj1.jpg" alt="QuestLearn Gamified Learning Platform Thumbnail">
+                <div class="project-overlay">
+                  <span class="btn btn-secondary">View Projects</span>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">QuestLearn</h3>
+                <p class="project-desc">A gamified learning management system designed to make studying interactive and
+                  fun through games.</p>
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">Gamification</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 (Supports multi-image switcher) -->
+            <div class="project-card">
+              <div class="project-img-container"
+                onclick="openProjectModal('Appointment Booking System', 'A streamlined online booking dashboard for managing slots and scheduling appointments in real-time. Features include an interactive calendar, instant confirmations, email notifications, and administrative scheduling rules.', 'PHP, MySQL, CSS Grid, JavaScript', 'img/proj2.jpg, img/proj2-1.jpg')">
+                <img src="img/proj2.jpg" alt="Appointment Booking System Thumbnail">
+                <div class="project-overlay">
+                  <span class="btn btn-secondary">View Projects</span>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Appointment Booking System</h3>
+                <p class="project-desc">An online portal built to manage client reservations, schedule slots, and
+                  organize services efficiently.</p>
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Scheduling</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-img-container"
+                onclick="openProjectModal('HAJA Rentals and Apparel', 'An e-commerce clothing rental system built to manage dress, gown, and suit rentals. Features include inventory stock tracking, booking schedule calendars, automated rental period status calculations, and returns logging.', 'PHP, MySQL, JavaScript, CSS Grid', 'img/HAJA.png, img/HAJA1.png, img/HAJA2.png')">
+                <img src="img/HAJA.png" alt="HAJA Dashboard">
+                <div class="project-overlay">
+                  <span class="btn btn-secondary">View Projects</span>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">HAJA Rentals and Apparel</h3>
+                <p class="project-desc">A digital booking and inventory tracking platform designed for managing dress, gown, and suit rentals.</p>
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Rentals</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+              <div class="project-img-container"
+                onclick="openProjectModal('Gatepass System', 'A secure digital gate log system built to track entry and exit records for students, faculty, and visitors. Features include real-time campus presence dashboards, visitor logging forms, and security log search filters.', 'PHP, MySQL, Responsive Design, CSS Grid', 'img/gatepass.png')">
+                <img src="img/gatepass.png" alt="Gatepass Manager System">
+                <div class="project-overlay">
+                  <span class="btn btn-secondary">View Projects</span>
+                </div>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Gatepass System</h3>
+                <p class="project-desc">A secure digital log portal built to replace manual logbooks, tracking entry/exit status for visitors and students.</p>
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">MySQL</span>
+                  <span class="project-tag">Security Logs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Project Details Modal Overlay -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-project-title">Project Title</h3>
+        <button class="modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-image-switcher">
+          <button class="switcher-btn switcher-prev" aria-label="Previous Image">&lt;</button>
+          <img id="modal-main-img" src="" alt="Project Screenshot">
+          <button class="switcher-btn switcher-next" aria-label="Next Image">&gt;</button>
+        </div>
+        <p id="modal-project-desc">Project details and description here.</p>
+        <div id="modal-project-tags" class="project-tags">
+          <!-- Tags go here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
