@@ -341,9 +341,12 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .hero-image-wrapper img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(15, 23, 42, 0.35));
   transition: var(--transition-smooth);
 }
 
@@ -445,9 +448,12 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .profile-img-wrapper img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(15, 23, 42, 0.35));
   transition: transform 0.5s ease;
 }
 
@@ -591,9 +597,12 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .project-img-container img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(15, 23, 42, 0.35));
   transition: var(--transition-smooth);
 }
 
@@ -699,6 +708,25 @@ main::-webkit-scrollbar-thumb:hover {
 .cert-preview-card:hover .cert-icon-box {
   border-color: rgba(34, 211, 238, 0.4);
   color: var(--accent-cyan);
+}
+
+.cert-viewer-container {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-glass);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(15, 23, 42, 0.28));
+}
+
+.cert-viewer-container embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+  background: #ffffff;
 }
 
 .cert-icon {
@@ -1131,9 +1159,14 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .modal-image-switcher img {
+  display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  object-position: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(15, 23, 42, 0.25));
 }
 
 .switcher-btn {
